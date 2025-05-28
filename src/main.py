@@ -13,3 +13,8 @@ if __name__ == "__main__":
    AIHumanApp().run()
 
 print(domain.some_function())
+print(domain.some_function())
+print(domain.add(10, 5))
+print(domain.greet("Ahmed"))
+print(domain.factorial(5))
+print(domain.reverse_string("Cython"))
