@@ -1,0 +1,29 @@
+<ChatScreen>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Label:
+        id: chat_history
+        text: ""
+        text_size: self.width, None
+        size_hint_y: 0.8
+        halign: 'left'
+        valign: 'top'
+
+    TextInput:
+        id: user_input
+        size_hint_y: 0.1
+        multiline: False
+        hint_text: "Type your message..."
+
+    BoxLayout:
+        size_hint_y: 0.1
+
+        Button:
+            text: "Send"
+            on_press: root.send_message()
+
+        Button:
+            text: "🎤 Voice"
+            on_press: root.use_voice()
